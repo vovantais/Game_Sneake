@@ -1,0 +1,73 @@
+@import "_variables.scss";
+@import "_fonts.scss";
+@import "_nullStyle.scss";
+@import "_textmixin.scss";
+
+.wrapper {
+   margin: 0;
+   display: flex;
+   flex-direction: column;
+   position: relative;
+   //    background: url(../img/full_screen4.jpg) no-repeat;
+   //    background-size: cover;
+   //    background-position: center;
+}
+.game {
+   &__field {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 10px auto 0px auto;
+      justify-self: center;
+      border: 3px solid yellow;
+      width: $mult-size;
+      height: $mult-size;
+      position: relative;
+      div {
+         width: $size-cell;
+         height: $size-cell;
+      }
+   }
+
+   &__score {
+      color: #fff;
+      z-index: 5;
+      @include adaptiv-font(30, 20);
+      display: block;
+      border: 1px solid #fff;
+      width: 100%;
+      height: 32px;
+      position: absolute;
+   }
+
+   &__arrows {
+      display: none;
+   }
+
+   &__arrow-top {
+   }
+
+   &__arrow-rigth {
+   }
+
+   &__arrow-bottom {
+   }
+
+   &__arrow-left {
+   }
+}
+.fas {
+}
+.fa-chevron-circle-up {
+}
+.fa-chevron-circle-right {
+}
+.fa-chevron-circle-down {
+}
+.fa-chevron-circle-left {
+}
+.sneake {
+   background: green;
+   border-radius: 8px;
+   // height: 32px;
+   // width: 90px !important;
+}

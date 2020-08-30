@@ -1,0 +1,154 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap");
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  background: #000000;
+  height: 100%;
+  width: 100%;
+  font-family: "Work Sans", sans-serif;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: "Work Sans", sans-serif;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.wrapper {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.game__field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 10px auto 0px auto;
+  justify-self: center;
+  border: 3px solid yellow;
+  width: 666px;
+  height: 666px;
+  position: relative;
+}
+
+.game__field div {
+  width: 33px;
+  height: 33px;
+}
+
+.game__score {
+  color: #fff;
+  z-index: 5;
+  display: block;
+  border: 1px solid #fff;
+  width: 100%;
+  height: 32px;
+  position: absolute;
+}
+
+@media (max-width: 768px) {
+  .game__score {
+    font-size: calc(20px + 17 * ((100vw -320px) / 1440));
+  }
+}
+
+@media (min-width: 768px) {
+  .game__score {
+    font-size: calc(20px + 10 * (100vw / 1440));
+  }
+}
+
+.game__arrows {
+  display: none;
+}
+
+.sneake {
+  background: green;
+  border-radius: 8px;
+}

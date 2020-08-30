@@ -1,0 +1,11 @@
+$fontWorkSans: "Work Sans", sans-serif;
+// Размеры дивов
+$value-size: 33;
+// Размеры ячеек
+$size-cell: $value-size + px;
+// Количество клеток в строке
+$value-count: 20;
+// Бордер по трипикселя с двух сторон поэтому 6
+$border: 6;
+// Блок game размеры
+$mult-size: (($value-count * $value-size) + $border) + px;
